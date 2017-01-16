@@ -1,0 +1,4 @@
+www.insecurehost.com
+www.notUsingSslYet.net
+.cleartexthttp.com
+etc.yourinsecuredomains.com
