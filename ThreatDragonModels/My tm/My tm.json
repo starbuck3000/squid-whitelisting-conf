@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "title": "My tm",
+    "owner": "Me"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Diagramme",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
