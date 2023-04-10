@@ -52,7 +52,8 @@ $html = '';
 $added = false;
 if(strlen($add) > 0)
 {
-    // add entry in proxy db
+    // add entry in proxy db 
+	// make sure permissions are granted to write in these two files
     $html .= ('adding '.$add.' to proxy in mode '.$schema.NL);
     $output = null;
     if($schema === 'https')
@@ -65,7 +66,7 @@ if(strlen($add) > 0)
 
     // restart proxy
     $html .= ('restarting proxy...'.NL);
-    exec('sudo /bin/systemctl reload squid 2>&1', $output);
+    exec('sudo /bin/systemctl reload squid 2>&1', $output); // make sure you allow this in sudoers file!
     var_dump($output);
     $html .= ('done.'.NL);
     $html .= ('<a href="?1=1">reload</a>'.NL);
